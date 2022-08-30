@@ -1,10 +1,13 @@
 .toolbar {
     height: 55px;
     width: 100%;
+	background-color: #293462;
+	color: #fff;
 
 	.nav {
 		width: 100%;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 
 		.app-title {
@@ -13,8 +16,7 @@
 
 		.profile {
 			display: flex;
-			justify-content: flex-end;
-			flex: 1;
+			align-items: center;
 		}
 	}
 
@@ -46,8 +48,8 @@
 	}
 
     .avatar {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		border-radius: 50%;
 		object-fit: cover;
 		margin-right: 0.5rem;

@@ -1,3 +1,4 @@
+import { FormGroup, FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
+	theForm: FormGroup;
 
-  constructor() { }
+	constructor() {
+		this.theForm = new FormGroup({
+			firstName: new FormControl('Steve'),
+			lastName: new FormControl('James'),
+			email: new FormControl('James32@gmail.com'),
 
-  ngOnInit(): void {
-  }
+			oldPassword: new FormControl('pakistan'),
+			newPassword: new FormControl('pakistan123'),
+			confirmPassword: new FormControl('pakistan123'),
+		});
+	}
 
+	ngOnInit(): void {
+	}
 }

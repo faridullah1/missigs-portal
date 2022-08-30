@@ -1,10 +1,10 @@
-<mat-toolbar color="primary" class="toolbar">
+<mat-toolbar class="toolbar">
     <nav class="nav">
         <h1 class="app-title"> {{ title }} </h1>
 
 		<div class="profile" [matMenuTriggerFor]="userMenu">
             <img src="/assets/images/avatar.jpg" alt="Avatar" class="avatar">
-			<mat-icon>arrow_up</mat-icon>
+			<mat-icon style="cursor: pointer;">expand_more</mat-icon>
         </div>
 		
 		<mat-menu #userMenu="matMenu">

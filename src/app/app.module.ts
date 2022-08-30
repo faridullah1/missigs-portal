@@ -14,6 +14,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { SubscriptionsComponent } from './components/subscriptions/subscriptions.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { LoginComponent } from './components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { LoginComponent } from './components/login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+	ReactiveFormsModule,
+	
 	MaterialModule
   ],
   providers: [],

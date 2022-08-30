@@ -4,21 +4,13 @@
 	display: flex;
 	flex-direction: column;
 
-	.top-section {
-		display: flex;
-		flex-direction: column;
-		height: 99%;
-
-		.drawer {
-			flex: 0 0 15%;
-			background-color: yellowgreen;
-		}
+	.drawer {
+		flex: 0 0 12%;
 	}
     
     .main {
 		display: flex;
 		flex: 1;
 		padding: 4px;
-		background-color: red;
     }
 }

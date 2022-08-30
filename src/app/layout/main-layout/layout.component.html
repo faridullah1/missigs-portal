@@ -1,15 +1,15 @@
 <div class="container">
-    <div class="top-section">
-		<app-toolbar></app-toolbar>
+    <app-toolbar></app-toolbar>
 
-		<div style="display: flex; height: calc(100% - 55px);">
-			<drawer class="drawer"></drawer>
+	<div style="display: flex; height: calc(100% - 55px); overflow: auto;">
+		<drawer class="drawer"></drawer>
 
-			<main class="main">
+		<main class="main">
+			<div class="w-100-p">
 				<router-outlet></router-outlet>
-			</main>
-		</div>
-    </div>
+			</div>
+		</main>
+	</div>
 
     <app-footer></app-footer>
 </div>
