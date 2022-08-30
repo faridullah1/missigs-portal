@@ -1,0 +1,13 @@
+<div class="drawer">
+    <div style="height: 100%;">
+        <nav class="navigation">
+            <ul>
+                <li *ngFor="let m of navigation"
+                    routerLinkActive="active" [routerLink]="m.url">
+					<mat-icon class="nav-icon">{{m.icon}}</mat-icon>
+					<span>{{m.title}}</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.container {
+    height: 100%;
+    color: #333;
+	display: flex;
+	flex-direction: column;
+
+	.top-section {
+		display: flex;
+		flex-direction: column;
+		height: 99%;
+
+		.drawer {
+			flex: 0 0 15%;
+			background-color: yellowgreen;
+		}
+	}
+    
+    .main {
+		display: flex;
+		flex: 1;
+		padding: 4px;
+		background-color: red;
+    }
+}

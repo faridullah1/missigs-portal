@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="top-section">
+		<app-toolbar></app-toolbar>
+
+		<div style="display: flex; height: calc(100% - 55px);">
+			<drawer class="drawer"></drawer>
+
+			<main class="main">
+				<router-outlet></router-outlet>
+			</main>
+		</div>
+    </div>
+
+    <app-footer></app-footer>
+</div>
+

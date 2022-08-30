@@ -1,0 +1,37 @@
+.drawer {
+    height: 100%;
+
+    .nav-toggle-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #afa7a7;
+    }
+
+    .navigation {
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+    
+        ul li {
+			display: flex;
+			align-items: center;
+
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+			margin-bottom: 1rem;
+        }
+
+        .nav-icon {
+            color: #afa7a7;
+			margin-right: .5rem;
+        }
+
+		.right-margin {
+            margin-right: 20px;
+		}
+    }
+}
