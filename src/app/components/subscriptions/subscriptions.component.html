@@ -1,1 +1,31 @@
-<p>subscriptions works!</p>
+<div class="container">
+	<h2 class="heading">{{ title }}</h2>
+	
+	<div class="subscription">
+		<div class="card" [class.selected]="subs.selected" *ngFor="let subs of subscriptionTypes">
+			<div class="type">{{ subs.type }}</div>
+			<div class="discount" *ngIf="subs.discount">Save {{ subs.discount }}%</div>
+			<div class="d-flex">
+				<span class="currency">$</span>
+				<span class="amount">{{ subs.ammount }}</span>
+				<span class="duration">mo</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="billing">
+		<h3 class="heading">Billings</h3>
+
+		<div class="invoices">
+			<div class="invoice">
+				<div>September_2022</div>
+				<mat-icon>upload_file</mat-icon>
+			</div>
+
+			<div class="invoice">
+				<div>August_2022</div>
+				<mat-icon>upload_file</mat-icon>
+			</div>
+		</div>
+	</div>
+</div>
