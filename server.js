@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
-app.use(express.static(__dirname + '/dist/academy_website'));
+app.use(express.static(__dirname + '/dist/missigs-portal'));
 
 app.get('/*', (req, res) => {    
 	res.sendFile(path.join(__dirname+'/dist/missigs-portal/index.html'));
