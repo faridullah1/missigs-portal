@@ -1,1 +1,23 @@
-<p>jobs works!</p>
+<div class="container">
+	<h2 class="heading">Jobs</h2>
+
+	<div class="jobs">
+		<div class="job" [class.selected]="job.selected" *ngFor="let job of jobs">
+			<div>
+				<div class="title">{{ job.title }} <span *ngIf="job.location">
+					|&nbsp;{{ job.location }}</span>
+				</div>
+	
+				<div class="description">{{ job.description }}</div>
+	
+				<div class="tags">
+					<span class="tag" [style.backgroundColor]="tag.color" *ngFor="let tag of job.tags">
+						{{ tag.title }}
+					</span>
+				</div>
+			</div>
+
+			<button mat-raised-button class="btn-more">more</button>
+		</div>
+	</div>
+</div>

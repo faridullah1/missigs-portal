@@ -1,0 +1,55 @@
+.container {
+	padding: .5rem 4rem;
+
+	.heading {
+		border-bottom: 1px solid gray;
+
+		padding-bottom: 0.2rem;
+		padding-left: 0.5rem;	
+	}
+
+	.job {
+		border: 1px solid #707070;
+		margin-bottom: 1.4rem;
+		padding: 0.6rem 1rem;
+		border-radius: 8px;
+
+		display: flex;
+		align-items: center;
+
+		.title {
+			color: #275696;
+			font-size: 1.4rem;
+			font-weight: 500;
+		}
+
+		.description {
+			margin: .6rem 0;
+			color: var(--color-black);
+			font-weight: 500;
+		}
+
+		.tag {
+			padding: 0.1rem 0.6rem;
+			border-radius: 6px;
+			color: #fff;
+			font-size: 0.6rem;
+			margin-right: 0.8rem;
+		}
+	}
+
+	.selected {
+		border-left: 8px solid #3E74BE;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.btn-more {
+		background-color: #d61c4e;
+		color: #fff;
+		line-height: 1.6rem;
+		font-weight: 300;
+		border-radius: 15px;
+		min-width: 70px;
+	}
+}
