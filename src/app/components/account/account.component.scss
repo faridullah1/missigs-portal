@@ -24,6 +24,18 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
+			button {
+				background-color: #3bacb6;
+				color: #fff;
+				border-radius: 16px;
+				min-width: 5rem;
+				line-height: 1.8rem;
+			}
+		}
+
+		.label {
+			font-weight: 600;
 		}
 	}
 }
