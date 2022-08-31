@@ -1,1 +1,56 @@
-<p>profile works!</p>
+<div class="container">
+	<h2 class="heading">{{ title }}</h2>
+
+	<form class="form" [formGroup]="theForm">
+		<div class="section">
+			<div class="d-flex flex-column">
+				<mat-label class="label">Post Title</mat-label>
+				<mat-form-field appearance="outline">
+					<input type="text" matInput placeholder="Post Title" formControlName="title">
+				</mat-form-field>
+
+				<div class="badges-container">
+					<div class="d-flex badge badge-red">
+						wordpress <mat-icon>close</mat-icon>
+					</div>
+					<div class="d-flex badge badge-red">
+						shopify <mat-icon>close</mat-icon>
+					</div>
+				</div>
+			</div>
+	
+			<div class="d-flex flex-column">
+				<mat-label class="label">Skills</mat-label>
+				<mat-form-field appearance="outline">
+					<input type="text" matInput placeholder="Skills" formControlName="skills">
+				</mat-form-field>
+
+				<div class="badges-container">
+					<div class="d-flex badge badge-red">
+						Lille <mat-icon>close</mat-icon>
+					</div>
+					<div class="d-flex badge badge-red">
+						Marseille <mat-icon>close</mat-icon>
+					</div>
+				</div>
+			</div>
+	
+			<div class="d-flex flex-column">
+				<mat-label class="label">Cities</mat-label>
+				<mat-form-field appearance="outline">
+					<input type="text" matInput placeholder="Cities" formControlName="cities">
+				</mat-form-field>
+			</div>
+	
+			<div class="d-flex flex-column">
+				<mat-label>Rayon</mat-label>
+			</div>
+	
+			<mat-checkbox>Looking for remote work too</mat-checkbox>
+	
+			<div class="btn-save-container">
+				<button mat-raised-button>Modify</button>
+			</div>
+		</div>
+	</form>
+</div>

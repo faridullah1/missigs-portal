@@ -42,4 +42,13 @@
             margin-right: 20px;
 		}
     }
+
+	.active {
+		background-color: gray;
+		color: #fff;
+
+		.nav-icon {
+            color: #fff;
+        }
+	}
 }
