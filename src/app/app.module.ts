@@ -15,6 +15,7 @@ import { SubscriptionsComponent } from './components/subscriptions/subscriptions
 import { JobsComponent } from './components/jobs/jobs.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { JobDetailComponent } from './components/jobs/detail/detail.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 	SubscriptionsComponent,
 	JobsComponent,
  	LoginComponent,
+  	JobDetailComponent,
   ],
   imports: [
     BrowserModule,

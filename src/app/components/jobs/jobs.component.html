@@ -1,5 +1,5 @@
 <div class="container">
-	<h2 class="heading">Jobs</h2>
+	<h2 class="heading">{{ title }}</h2>
 
 	<div class="jobs">
 		<div class="job" [class.selected]="job.selected" *ngFor="let job of jobs">
@@ -17,7 +17,7 @@
 				</div>
 			</div>
 
-			<button mat-raised-button class="btn-more">more</button>
+			<button mat-raised-button class="btn-more" (click)="onViewDetail(job)">more</button>
 		</div>
 	</div>
 </div>

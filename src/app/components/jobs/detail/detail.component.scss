@@ -1,0 +1,58 @@
+.container {
+	padding: .5rem 4rem;
+
+	.heading {
+		border-bottom: 1px solid #f0f0f0;
+		padding: 0 0 .2rem 0.5rem;
+		color: #275696;
+		margin-bottom: 8px;
+	}
+
+	.details {
+		.tag {
+			padding: 0.1rem 0.6rem;
+			border-radius: 6px;
+			color: #fff;
+			font-size: 0.6rem;
+			margin-right: 0.8rem;
+		}
+
+		.componay-info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.location {
+				display: flex;
+				align-items: center;
+				margin-right: 2rem;
+			}
+
+			.company {
+				display: flex;
+				align-items: center;
+			}
+
+			.icon {
+				margin-right: .2rem;
+			}
+		}
+
+		.description {
+			margin: 1.2rem 0 2rem;
+			color: var(--color-black);
+			font-weight: 500;
+		}
+
+		.condidate {
+			display: flex;
+			justify-content: center;
+		}
+
+		.btn-condidate {
+			background-color: #fedb39;
+			color: #585858;
+			border-radius: 1rem;
+		}
+	}
+}

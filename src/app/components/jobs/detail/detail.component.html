@@ -1,0 +1,35 @@
+<div class="container">
+	<h2 class="heading">{{ job.title }}</h2>
+
+	<div class="details">
+		<div class="tags">
+			<span class="tag" [style.backgroundColor]="tag.color" *ngFor="let tag of job.tags">
+				{{ tag.title }}
+			</span>
+		</div>
+
+		<div class="componay-info">
+			<div class="d-flex">
+				<div class="location">
+					<mat-icon class="icon">pin_drop</mat-icon>
+					<span>{{ job.location }}</span>
+				</div>
+	
+				<div class="company">
+					<mat-icon class="icon">business</mat-icon>
+					<span>Amazon LLC</span>
+				</div>
+			</div>
+
+			<button class="btn-condidate" mat-raised-button>Condidate</button>
+		</div>
+
+		<div class="description">
+			{{ job.description }}
+		</div>
+
+		<div class="condidate">
+			<button class="btn-condidate" mat-raised-button>Condidate</button>
+		</div>
+	</div>
+</div>

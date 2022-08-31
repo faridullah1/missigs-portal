@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Job } from 'src/app/common/models';
 
 @Component({
@@ -7,9 +8,10 @@ import { Job } from 'src/app/common/models';
   styleUrls: ['./jobs.component.scss']
 })
 export class JobsComponent {
+	title = 'Jobs list';
 	jobs: Job[] = [];
 
-	constructor() {
+	constructor(private router: Router) {
 		this.jobs = [
 			{
 				title: 'Full stack developer (Angular /Java /PHP /Symphony)',
@@ -19,6 +21,10 @@ export class JobsComponent {
 					{
 						title: 'Angular',
 						color: '#1baa63'
+					},
+					{
+						title: 'React',
+						color: '#61dafb'
 					}
 				],
 				selected: true
@@ -43,5 +49,9 @@ export class JobsComponent {
 				]
 			}
 		]
+	}
+
+	onViewDetail(job: Job): void {
+		this.router.navigate(['jobs', job.title])
 	}
 }

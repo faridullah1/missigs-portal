@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './layout/main-layout/layout.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { JobDetailComponent } from './components/jobs/detail/detail.component';
 
 const routes: Routes = [
 	{
@@ -14,6 +15,7 @@ const routes: Routes = [
 		children: [
 			{ path: '', redirectTo: 'account', pathMatch: 'prefix' },
 			{ path: 'jobs', component: JobsComponent },
+			{ path: 'jobs/:name', component: JobDetailComponent },
 			{ path: 'profile', component: ProfileComponent },
 			{ path: 'subscriptions', component: SubscriptionsComponent },
 			{ path: 'account', component: AccountComponent },
