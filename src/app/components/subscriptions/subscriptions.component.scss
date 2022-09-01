@@ -60,6 +60,14 @@
 	.billing {
 		width: 40%;
 
+		@media screen and (max-width: 750px) {
+			width: 90%;
+		}
+
+		@media screen and (max-width: 600px) {
+			width: 100%;
+		}
+
 		.invoice {
 			display: flex;
 			justify-content: space-between;
