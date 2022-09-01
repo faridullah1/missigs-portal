@@ -8,7 +8,7 @@
 					|&nbsp;{{ job.location }}</span>
 				</div>
 	
-				<div class="description">{{ job.description }}</div>
+				<div class="description">{{ job.description | ellipsis:250 }}</div>
 	
 				<div class="tags">
 					<span class="badge" [style.backgroundColor]="tag.color" *ngFor="let tag of job.tags">

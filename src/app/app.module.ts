@@ -16,6 +16,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { JobDetailComponent } from './components/jobs/detail/detail.component';
+import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
 
 @NgModule({
@@ -31,6 +32,8 @@ import { JobDetailComponent } from './components/jobs/detail/detail.component';
 	JobsComponent,
  	LoginComponent,
   	JobDetailComponent,
+
+	EllipsisPipe
   ],
   imports: [
     BrowserModule,
