@@ -27,4 +27,12 @@ export class SubscriptionsComponent {
 			}
 		];
 	}
+
+	onSubscriptionChange(subs: SubscriptionType): void {
+		for (let s of this.subscriptionTypes) {
+			s.selected = false;
+		}
+
+		subs.selected = true;
+	}
 }

@@ -2,7 +2,10 @@
 	<h2 class="heading">{{ title }}</h2>
 	
 	<div class="subscription">
-		<div class="card" [class.selected]="subs.selected" *ngFor="let subs of subscriptionTypes">
+		<div class="card" 
+			[class.selected]="subs.selected" 
+			*ngFor="let subs of subscriptionTypes"
+			(click)="onSubscriptionChange(subs)">
 			<div class="type">{{ subs.type }}</div>
 			<div class="discount" *ngIf="subs.discount">Save {{ subs.discount }}%</div>
 			<div class="d-flex">
