@@ -1,8 +1,8 @@
 <div class="container">
-    <app-toolbar></app-toolbar>
+    <app-toolbar (signal)="toggleDrawer($event)"></app-toolbar>
 
 	<div style="display: flex; height: calc(100% - 55px); overflow: auto;">
-		<drawer class="drawer"></drawer>
+		<drawer class="drawer" [class.is-open]="isOpen"></drawer>
 
 		<main class="main">
 			<div class="w-100-p">

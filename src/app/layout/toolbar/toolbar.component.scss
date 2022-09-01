@@ -64,3 +64,13 @@
 		opacity: 0.5
 	}
 }
+
+.menu-icon {
+	display: none;
+}
+
+@media screen and (max-width: 960px) {
+	.menu-icon {
+		display: block;
+	}
+}

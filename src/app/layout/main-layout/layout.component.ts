@@ -8,5 +8,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainLayoutComponent {
+	isOpen = false;
+
 	constructor() { }
+
+	toggleDrawer(ev: boolean): void {
+		this.isOpen = ev;
+	}
 }

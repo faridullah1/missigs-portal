@@ -1,6 +1,12 @@
 <mat-toolbar class="toolbar">
     <nav class="nav">
-        <h1 class="app-title"> {{ title }} </h1>
+		<div class="d-flex align-center">
+			<button mat-icon-button class="menu-icon" (click)="openSideNav()">
+				<mat-icon>menu</mat-icon>
+			</button>
+	
+			<h1 class="app-title"> {{ title }} </h1>
+		</div>
 
 		<div class="profile" [matMenuTriggerFor]="userMenu">
             <img src="assets/images/avatar.jpg" alt="Avatar" class="avatar">

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Navigation } from 'src/app/common/navigation';
 import { Menu } from '../models';
 
@@ -12,6 +12,9 @@ import { Menu } from '../models';
 export class ToolbarComponent implements OnInit {
 	navigation: Menu[];
 	title = 'missigs';
+	isOpen = false;
+
+	@Output() signal = new EventEmitter();
 
   	constructor() {
 		this.navigation = Navigation.menu;
@@ -21,5 +24,11 @@ export class ToolbarComponent implements OnInit {
 
 	onLogout(): void {
 		console.log('logging out.');
+	}
+
+	openSideNav(): void {
+		this.isOpen = !this.isOpen;
+
+		this.signal.emit(this.isOpen);
 	}
 }
