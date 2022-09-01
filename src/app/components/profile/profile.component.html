@@ -43,7 +43,20 @@
 			</div>
 	
 			<div class="d-flex flex-column">
-				<mat-label>Rayon</mat-label>
+				<mat-label class="label">Rayon</mat-label>
+
+				<div class="slider-end-values">
+					<span>0km</span><span>200km</span>
+				</div>
+
+				<mat-slider
+					thumbLabel
+					tickInterval="1"
+					step="1"
+					min="0"
+					max="200"
+					aria-label="km">
+				</mat-slider>
 			</div>
 	
 			<mat-checkbox>Looking for remote work too</mat-checkbox>

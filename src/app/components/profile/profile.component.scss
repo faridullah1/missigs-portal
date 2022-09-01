@@ -55,5 +55,13 @@
 		.label {
 			font-weight: 600;
 		}
+
+		.slider-end-values {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: -1rem;
+			font-size: .6rem;
+			font-weight: 500;
+		}
 	}
 }
