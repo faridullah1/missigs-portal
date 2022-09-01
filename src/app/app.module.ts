@@ -13,7 +13,6 @@ import { AccountComponent } from './components/account/account.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SubscriptionsComponent } from './components/subscriptions/subscriptions.component';
 import { JobsComponent } from './components/jobs/jobs.component';
-import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { JobDetailComponent } from './components/jobs/detail/detail.component';
 import { EllipsisPipe } from './pipes/ellipsis.pipe';
@@ -30,7 +29,6 @@ import { EllipsisPipe } from './pipes/ellipsis.pipe';
 	ProfileComponent,
 	SubscriptionsComponent,
 	JobsComponent,
- 	LoginComponent,
   	JobDetailComponent,
 
 	EllipsisPipe

@@ -4,7 +4,6 @@ import { AccountComponent } from './components/account/account.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './layout/main-layout/layout.component';
-import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { JobDetailComponent } from './components/jobs/detail/detail.component';
 
@@ -21,7 +20,6 @@ const routes: Routes = [
 			{ path: 'account', component: AccountComponent },
 		]
 	},
-	{ path: 'login', component: LoginComponent },
 	{ path: '**', redirectTo: 'account', pathMatch: 'full' }
 ];
 
