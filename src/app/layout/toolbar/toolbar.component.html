@@ -3,12 +3,14 @@
         <h1 class="app-title"> {{ title }} </h1>
 
 		<div class="profile" [matMenuTriggerFor]="userMenu">
-            <img src="/assets/images/avatar.jpg" alt="Avatar" class="avatar">
+            <img src="assets/images/avatar.jpg" alt="Avatar" class="avatar">
 			<mat-icon style="cursor: pointer;">expand_more</mat-icon>
         </div>
 		
 		<mat-menu #userMenu="matMenu">
-			<button mat-menu-item (click)="onLogout()">Logout</button>
+			<button class="logout-btn" mat-menu-item (click)="onLogout()">
+				<img class="icon-image" src="assets/icons/logout.png" alt="Logout">Logout
+			</button>
 		</mat-menu>
     </nav>
 </mat-toolbar>

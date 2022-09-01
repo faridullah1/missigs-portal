@@ -55,3 +55,12 @@
 		margin-right: 0.5rem;
     }
 }
+
+.logout-btn {
+	display: flex;
+	align-items: center;
+
+	.icon-image {
+		opacity: 0.5
+	}
+}

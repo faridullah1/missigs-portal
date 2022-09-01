@@ -62,10 +62,15 @@
 		.invoice {
 			display: flex;
 			justify-content: space-between;
-			margin: 0 1.2rem 0.4rem 0;
+			margin-bottom: 0.8rem;
+			border-bottom: 1px solid #f0f0f0;
+			padding: 0 1.4rem 0.5rem 0;
 
-			mat-icon {
-				color: #999;
+			.icon-image {
+				width: 15px;
+				height: 18px;
+				margin-right: 6px;
+				opacity: .6;
 			}
 		}
 	}

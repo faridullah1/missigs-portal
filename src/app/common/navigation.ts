@@ -4,28 +4,28 @@ export class Navigation {
             name: 'jobs',
             title: 'Jobs',
             type: 'item',
-            icon: 'work',
+            icon: 'assets/icons/jobs.png',
             url: 'jobs'
         },
         {
             name: 'profile',
             title: 'Profile',
             type: 'item',
-            icon: 'person_add',
+            icon: 'assets/icons/profile.png',
             url: 'profile'
         },
 		{
             name: 'subscriptions',
             title: 'Subscriptions',
             type: 'item',
-            icon: 'subscriptions',
+            icon: 'assets/icons/subscription.png',
             url: 'subscriptions'
         },
 		{
             name: 'account',
             title: 'Account',
             type: 'item',
-            icon: 'account_circle',
+            icon: 'assets/icons/account.png',
             url: 'account'
         }
     ]

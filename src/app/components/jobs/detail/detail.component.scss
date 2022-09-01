@@ -13,6 +13,21 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			color: var(--color-black);
+
+			.icon-image-loc {
+				width: 25px;
+				height: 25px;
+				margin-right: 6px;
+				opacity: .5;
+			}
+	
+			.icon-image-comp {
+				width: 18px;
+				height: 18px;
+				margin-right: 6px;
+				opacity: .6;
+			}
 
 			.location {
 				display: flex;

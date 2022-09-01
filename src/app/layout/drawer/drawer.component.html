@@ -4,7 +4,7 @@
             <ul>
                 <li *ngFor="let m of navigation"
                     routerLinkActive="active" [routerLink]="m.url">
-					<mat-icon class="nav-icon">{{m.icon}}</mat-icon>
+					<img class="icon-image" [src]="m.icon" [alt]="m.title">
 					<span>{{m.title}}</span>
                 </li>
             </ul>

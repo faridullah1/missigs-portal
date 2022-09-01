@@ -50,5 +50,9 @@
 		.nav-icon {
             color: #fff;
         }
+
+		.icon-image {
+			filter: brightness(0) invert(1) opacity(.7);
+		}
 	}
 }
